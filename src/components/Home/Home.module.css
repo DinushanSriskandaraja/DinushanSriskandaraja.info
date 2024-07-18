@@ -1,0 +1,25 @@
+/* Home.module.css */
+
+.home {
+  text-align: center;
+  padding: 80px 20px;
+  /* background-color: #f8f8f8; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--primary-brand);
+  /* Apply custom color variable */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: var(--primary-brand);
+  /* Apply custom color variable */
+}

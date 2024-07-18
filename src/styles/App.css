@@ -1,0 +1,92 @@
+/* App.css */
+
+/* Import the Poppins font */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Root variables for colors */
+
+/* :root {
+  --primary-background-color: #f8f8f8;
+  Off white
+  --primary-text-color: #002423;
+  --primary-text-gradient: #bf925a;
+  Green
+  --brand-background-gradient: linear-gradient(
+    45deg,
+    #a47a1e,
+    #d3a84c,
+    #ffec94,
+    #e6be69,
+    #ffd87c,
+    #b58f3e,
+    #956d13
+  );
+  Shiny gold gradient
+} */
+
+/* :root {
+  --primary-background-color: #f8f8f8;
+  --primary-text-color: #002423;
+  --primary-brand: #bf925a;
+} */
+
+:root {
+  --primary-background-color: #002423;
+  --primary-text-color: #f8f8f8;
+  --primary-brand: #bf925a;
+}
+
+/* General styles */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Brand text */
+
+.brand-text {
+  width: fit-content;
+  background: var(--brand-background-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Main content styles */
+
+.main-content {
+  padding: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-brand);
+}
+
+p {
+  color: var(--primary-text-color);
+}
+
+button {
+  background-color: var(--brand-text-color);
+  color: var(--primary-background-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darken(var(--brand-text-color), 10%);
+}

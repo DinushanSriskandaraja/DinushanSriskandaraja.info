@@ -1,0 +1,41 @@
+/* About.module.css */
+
+.About {
+  width: 100%;
+  max-width: 800px;
+  padding: 40px;
+  background-color: var(--primary-background-color);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+
+.content {
+  /* No changes needed */
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--primary-brand);
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--primary-text-color);
+  text-align: justify;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+}

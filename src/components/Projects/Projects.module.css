@@ -1,0 +1,28 @@
+/* Projects.module.css */
+
+.Projects {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: var(--primary-background-color);
+}
+
+.projectsTitle {
+  font-size: 2rem;
+  color: var(--primary-brand);
+  margin-bottom: 40px;
+}
+
+.projectCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  /* Center align grid items horizontally */
+}
+
+@media (max-width: 768px) {
+  .projectCards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
