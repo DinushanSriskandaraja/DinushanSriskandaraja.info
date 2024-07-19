@@ -1,21 +1,21 @@
 .ProjectsCard {
   width: 350px;
-  height: 700px;
+  height: 500px;
   perspective: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
   background-color: var(--primary-background-color);
-  border: 2px solid var(--primary-brand);
+  /* border: 2px solid var(--primary-brand); */
   border-radius: 10px;
   overflow: hidden;
   position: relative;
 }
 
 .projectInner {
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
   position: absolute;
   /* top: 10%; */
   /* Adjust top to 50% to center vertically */
@@ -27,7 +27,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--primary-background-color);
+  background-color: var(--primary-text-color);
   border: 2px solid var(--primary-brand);
   border-radius: 10px;
   overflow: hidden;
@@ -53,13 +53,13 @@
 }
 
 .projectTitle {
-  color: var(--primary-text-color);
+  color: var(--primary-brand);
   font-size: 1.5rem;
   margin: 10px 0;
 }
 
 .projectDescription {
-  color: var(--primary-text-color);
+  color: var(--primary-background-color);
   font-size: 1rem;
   margin: 10px 0;
   overflow: hidden;
