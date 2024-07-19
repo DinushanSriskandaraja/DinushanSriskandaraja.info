@@ -85,6 +85,8 @@
   background-color: var(--primary-brand);
 }
 
+/* Media Queries */
+
 @media (max-width: 768px) {
   .Experience {
     padding: 20px;
@@ -92,19 +94,32 @@
   .title {
     font-size: 2rem;
   }
+  .timeline {
+    padding: 0;
+    /* Remove padding for smaller screens */
+  }
   .timelineItem {
     width: 100%;
     text-align: center;
   }
   .timelineItem.left,
   .timelineItem.right {
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    transform: none;
+  }
+  .timelineDot {
+    width: 16px;
+    height: 16px;
   }
 }
 
 @media (max-width: 480px) {
   .title {
     font-size: 1.5rem;
+  }
+  .timelineStart {
+    width: 45px;
+    height: 45px;
+    top: -40px;
   }
 }

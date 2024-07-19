@@ -1,6 +1,6 @@
 .ProjectsCard {
   width: 350px;
-  height: 500px;
+  height: 700px;
   perspective: 1000px;
   display: flex;
   justify-content: center;
@@ -93,15 +93,19 @@
 
 @media (max-width: 768px) {
   .ProjectsCard {
-    width: 80%;
+    width: 90%;
+    /* Increased width to use more space */
     height: auto;
+    /* Adjust height to fit content */
     padding: 10px;
   }
   .projectInner {
     height: auto;
+    /* Adjust height to fit content */
   }
   .projectImage {
-    height: auto;
+    height: 150px;
+    /* Adjust image height for better fit */
   }
   .projectTitle {
     font-size: 1.25rem;
@@ -116,5 +120,34 @@
   .projectLink {
     padding: 5px;
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ProjectsCard {
+    width: 100%;
+    /* Full width for small screens */
+    height: 400px;
+    /* Adjust height to fit content */
+    padding: 5px;
+    /* Reduced padding */
+  }
+  .projectImage {
+    height: 120px;
+    /* Further reduced height */
+  }
+  .projectTitle {
+    font-size: 1rem;
+  }
+  .projectDescription {
+    font-size: 0.8rem;
+  }
+  .projectLinks {
+    flex-direction: column;
+    gap: 3px;
+  }
+  .projectLink {
+    padding: 4px;
+    font-size: 0.8rem;
   }
 }

@@ -20,9 +20,37 @@
   /* Center align grid items horizontally */
 }
 
+/* Responsive adjustments */
+
 @media (max-width: 768px) {
+  .Projects {
+    padding: 30px 15px;
+    /* Adjust padding for smaller screens */
+  }
+  .projectsTitle {
+    font-size: 1.75rem;
+    /* Slightly smaller title for better fit */
+  }
   .projectCards {
     grid-template-columns: 1fr;
+    gap: 15px;
+    /* Adjust gap for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .Projects {
+    /* min-height: 500px; */
+    padding: 20px 10px;
+    /* Further reduced padding for very small screens */
+  }
+  .projectsTitle {
+    font-size: 1.5rem;
+    /* Further reduced title size */
+  }
+  .projectCards {
+    /* height: 100%; */
     gap: 10px;
+    /* Adjust gap for very small screens */
   }
 }
