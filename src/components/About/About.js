@@ -1,50 +1,52 @@
-// About.js
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import styles from "./About.module.css";
 
 const About = () => {
-  const [isVisible, setIsVisible] = useState(false);
   const controls = useAnimation();
   const { ref, inView } = useInView({ threshold: 0.5 });
 
   useEffect(() => {
     if (inView) {
-      setIsVisible(true);
-    }
-  }, [inView]);
-
-  useEffect(() => {
-    if (isVisible) {
       controls.start("visible");
     } else {
       controls.start("hidden");
     }
-  }, [isVisible, controls]);
+  }, [inView, controls]);
 
-  const variants = {
+  const containerVariants = {
+    visible: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
     visible: { opacity: 1, y: 0 },
     hidden: { opacity: 0, y: 50 },
   };
 
   return (
-    <div className={styles.About}>
-      <div className={styles.content} ref={ref}>
+    <motion.div
+      className={styles.About}
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={containerVariants}
+    >
+      <motion.div className={styles.content} variants={itemVariants}>
         <motion.h2
           className={styles.title}
-          initial="hidden"
-          animate={controls}
-          variants={variants}
+          variants={itemVariants}
           transition={{ duration: 0.5 }}
         >
           About Me{" "}
         </motion.h2>{" "}
         <motion.p
           className={styles.description}
-          initial="hidden"
-          animate={controls}
-          variants={variants}
+          variants={itemVariants}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           As an undergraduate deeply passionate about technology and software
@@ -56,8 +58,8 @@ const About = () => {
           enthusiastically participate in hackathons to continually expand my
           knowledge and push the boundaries of what 's possible.{" "}
         </motion.p>{" "}
-      </div>{" "}
-    </div>
+      </motion.div>{" "}
+    </motion.div>
   );
 };
 
