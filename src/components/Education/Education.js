@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import EduExCard from "../EduExCard/EduExCard";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHourglassEnd } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Education.module.css";
 
 const educationData = [
@@ -73,7 +75,6 @@ const Education = () => {
             variants={itemVariants}
             transition={{ duration: 1, delay: index * 0.5 }}
           >
-            {/* <div className={styles.timelineDot}> </div>{" "} */}{" "}
             <EduExCard
               title={education.institution}
               subtitle={education.degree}
@@ -82,6 +83,11 @@ const Education = () => {
             />{" "}
           </motion.div>
         ))}{" "}
+        {/* End of Timeline Indicator */}{" "}
+        <div className={styles.timelineEnd}>
+          {" "}
+          <FontAwesomeIcon icon={faHourglassEnd} size="2x" />{" "}
+        </div>{" "}
       </div>{" "}
     </motion.div>
   );

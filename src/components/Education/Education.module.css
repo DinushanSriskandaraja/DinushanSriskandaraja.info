@@ -1,13 +1,14 @@
-/* .Education {
+.Education {
   width: 90%;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 20px auto;
-  padding: 40px;
-  background-color: var(--primary-background-color);
+  padding: 60px;
+  /* padding-bottom: 100px; */
+  /* background-color: var(--primary-background-color); */
   border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); */
   position: relative;
-} */
+}
 
 .title {
   font-size: 2.5rem;
@@ -53,25 +54,34 @@
   text-align: left;
 }
 
-.timelineDot {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: var(--primary-brand);
-}
-
 /* Education.module.css */
 
-.timelineEndMessage {
-  text-align: center;
-  margin: 40px 0;
-  font-size: 1.5rem;
-  color: var(--primary-text-color);
+/* Existing styles */
+
+.timelineEnd {
+  position: absolute;
+  color: var(--primary-brand);
+  /* top: 0; */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-background-color);
+  border: 2px solid var(--primary-brand);
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  /* Ensure it appears above other elements */
+}
+
+.endText {
+  font-size: 1.2rem;
+  /* color: var(--primary-brand); */
   font-weight: bold;
+  margin-left: 10px;
 }
 
 @media (max-width: 768px) {

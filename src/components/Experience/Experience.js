@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import EduExCard from "../EduExCard/EduExCard";
 import { motion, useAnimation } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHourglassStart } from "@fortawesome/free-solid-svg-icons";
 import { useInView } from "react-intersection-observer";
 import styles from "./Experience.module.css";
 
@@ -61,7 +63,9 @@ const Experience = () => {
     >
       <h2 className={styles.title}> Experience </h2>{" "}
       <div className={styles.timeline}>
-        {" "}
+        <div className={styles.timelineStart}>
+          <FontAwesomeIcon icon={faHourglassStart} size="2x" />
+        </div>{" "}
         {experienceData.map((experience, index) => (
           <motion.div
             className={`${styles.timelineItem} ${
@@ -73,7 +77,6 @@ const Experience = () => {
             variants={itemVariants}
             transition={{ duration: 1, delay: index * 0.5 }}
           >
-            {/* <div className={styles.timelineDot}> </div>{" "} */}{" "}
             <EduExCard
               title={experience.title}
               subtitle={experience.subtitle}

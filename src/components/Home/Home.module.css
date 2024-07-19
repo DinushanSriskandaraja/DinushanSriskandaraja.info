@@ -11,12 +11,14 @@
 }
 
 h1 {
-  font-size: 4rem;
+  text-align: left;
+  font-size: 6rem;
   color: var(--primary-brand);
   margin-bottom: 20px;
 }
 
 p {
+  text-align: left;
   font-size: 2rem;
   color: var(--primary-brand);
 }
