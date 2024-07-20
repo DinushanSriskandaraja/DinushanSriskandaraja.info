@@ -9,7 +9,7 @@ const menuItems = [
   { id: 3, label: "Projects", sectionId: "projects" },
   { id: 4, label: "Experiences", sectionId: "experiences" },
   { id: 5, label: "Education", sectionId: "education" },
-  { id: 5, label: "Gallery", sectionId: "gallery" },
+  { id: 6, label: "Gallery", sectionId: "gallery" },
 ];
 
 function useMenuAnimation(isOpen) {
