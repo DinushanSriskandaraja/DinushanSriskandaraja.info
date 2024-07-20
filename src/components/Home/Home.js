@@ -65,21 +65,21 @@ const Home = () => {
         style={{ marginTop: "2rem" }}
       >
         {/* <motion.a
-                                                                                                                                              href="#projects"
-                                                                                                                                              whileHover={{ scale: 1.1 }}
-                                                                                                                                              whileTap={{ scale: 0.9 }}
-                                                                                                                                              style={{
-                                                                                                                                                textDecoration: "none",
-                                                                                                                                                color: "#bf925a",
-                                                                                                                                                fontSize: "1.5rem",
-                                                                                                                                                border: "2px solid #bf925a",
-                                                                                                                                                padding: "0.5rem 1rem",
-                                                                                                                                                borderRadius: "70px",
-                                                                                                                                                backgroundColor: "white",
-                                                                                                                                              }}
-                                                                                                                                            >
-                                                                                                                                              View My Work{" "}
-                                                                                                                                            </motion.a>{" "} */}{" "}
+                                                                                                                                                          href="#projects"
+                                                                                                                                                          whileHover={{ scale: 1.1 }}
+                                                                                                                                                          whileTap={{ scale: 0.9 }}
+                                                                                                                                                          style={{
+                                                                                                                                                            textDecoration: "none",
+                                                                                                                                                            color: "#bf925a",
+                                                                                                                                                            fontSize: "1.5rem",
+                                                                                                                                                            border: "2px solid #bf925a",
+                                                                                                                                                            padding: "0.5rem 1rem",
+                                                                                                                                                            borderRadius: "70px",
+                                                                                                                                                            backgroundColor: "white",
+                                                                                                                                                          }}
+                                                                                                                                                        >
+                                                                                                                                                          View My Work{" "}
+                                                                                                                                                        </motion.a>{" "} */}{" "}
       </motion.div>{" "}
     </motion.div>
   );
