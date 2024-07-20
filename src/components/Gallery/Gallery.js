@@ -1,30 +1,30 @@
-// Gallery.jsx or Gallery.js
 import React, { useRef } from "react";
 import ImageCard from "../ImageCard/ImageCard"; // Adjust the import path as needed
 import styles from "./Gallery.module.css"; // Import the CSS module
 import { motion } from "framer-motion";
 
-const images = [
-  {
-    src: "https://images.unsplash.com/photo-1635373670332-43ea883bb081?q=80&w=2781&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Example image 1",
-    rotate: "6deg",
-    top: "20%",
-    left: "25%",
-    width: "150px",
-    height: "auto",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1576174464184-fb78fe882bfd?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Example image 2",
-    rotate: "12deg",
-    top: "45%",
-    left: "60%",
-    width: "120px",
-    height: "auto",
-  },
-  // Add more images as needed
-];
+// Function to generate a random number between min and max
+const getRandomValue = (min = 0, max = 100) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+// Dynamically import images
+const requireContext = require.context(
+  "../../assets/gallery",
+  false,
+  /\.(jpg|jpeg|png)$/
+);
+const imageFiles = requireContext.keys().map((file) => requireContext(file));
+
+const images = imageFiles.map((file, index) => ({
+  src: file, // Use file.default to get the image path
+  alt: `Example image ${index + 1}`,
+  // rotate: `${getRandomRotation()}deg`, // Example rotation
+  rotate: `${getRandomValue(0, 180)}deg`,
+  top: `${getRandomValue(0, 80)}%`, // Random top position between 0% and 80%
+  left: `${getRandomValue(0, 80)}%`, // Random left position between 0% and 80%
+  width: "150px", // Adjust as needed
+  height: "auto",
+}));
 
 const Gallery = () => {
   const containerRef = useRef(null);

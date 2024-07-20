@@ -8,18 +8,25 @@ import styles from "./Experience.module.css";
 
 const experienceData = [
   {
-    title: "Software Developer Intern",
-    subtitle: "Tech Innovators Inc.",
-    duration: "June 2023 - August 2023",
+    title: "Branding Consultant",
+    subtitle: "Self-Employed",
+    duration: "April 2024 - Present",
     description:
-      "Developed and maintained web applications using React and Node.js. Collaborated with the team on various projects and improved application performance.",
+      "Empowering startups and businesses to elevate their digital presence. Specializing in brand strategy, visual identity, and online engagement.",
   },
   {
-    title: "Freelance Web Developer",
-    subtitle: "Self-Employed",
-    duration: "January 2023 - Present",
+    title: "Front-End Developer",
+    subtitle: "Aizenit",
+    duration: "August 2022 - April 2023",
     description:
-      "Designed and developed websites for various clients, focusing on responsive design and user experience. Managed projects from conception to deployment.",
+      "Revamped user interfaces for web applications using Angular, enhancing usability and aesthetics. Addressed and resolved privilege-based issues to ensure smooth functionality.",
+  },
+  {
+    title: "Quality Assurance",
+    subtitle: "Aizenit",
+    duration: "June 2022 - August 2022",
+    description:
+      "Conducted thorough testing for Android and web applications to ensure quality and performance. Developed and maintained comprehensive test cases to identify and resolve bugs.",
   },
 ];
 

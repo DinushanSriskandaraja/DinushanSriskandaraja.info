@@ -12,14 +12,28 @@ const educationData = [
     degree: "Higher Diploma in Information Technology",
     duration: "2022 - Present",
     description:
-      "Specializing in Data Communication and Networks II, Software Development, and Web Technologies.",
+      "Pursuing a Higher Diploma with a focus on Data Communication and Networks, Software Development, and Web Technologies. Gaining hands-on experience in cutting-edge IT practices and tools.",
+  },
+  // {
+  //   institution: "Hindu College Colombo",
+  //   degree: "G.C.E Advanced Level",
+  //   duration: "2020 - 2022",
+  //   description:
+  //     "Completed advanced studies in Science and Mathematics, complemented by additional coursework in Computer Science, laying a strong foundation for further IT education.",
+  // },
+  {
+    institution: "Esoft Metro Campus",
+    degree: "Diploma in IT",
+    duration: "2019",
+    description:
+      "Studied core IT concepts, including programming, database management, and networking, with practical exposure to various IT applications and technologies.",
   },
   {
-    institution: "High School",
-    degree: "High School Diploma",
-    duration: "2016 - 2021",
+    institution: "Esoft Metro Campus",
+    degree: "Diploma in English",
+    duration: "2019",
     description:
-      "Focused on Science and Mathematics with additional coursework in Computer Science.",
+      "Enhanced communication skills through advanced English language studies, focusing on professional and technical writing, and effective verbal communication.",
   },
 ];
 

@@ -1,8 +1,18 @@
-.drag-elements {
+.image-card {
   position: absolute;
-  background-color: #e5e5e5;
-  /* Replace with your color */
+  background-color: #e5e7eb;
+  /* Neutral 200 */
   padding: 0.25rem;
+  /* p-1 */
   padding-bottom: 1rem;
-  cursor: grab;
+  /* pb-4 */
+  transition: transform 0.2s;
+}
+
+.image-card:hover {
+  transform: scale(1.1);
+}
+
+.image-card:active {
+  transform: scale(0.95);
 }
