@@ -7,6 +7,7 @@ import Experiences from "./components/Experience/Experience";
 import Education from "./components/Education/Education";
 import { Element } from "react-scroll";
 import "./styles/App.css";
+import Gallery from "./components/Gallery/Gallery";
 
 const App = () => {
   return (
@@ -27,6 +28,9 @@ const App = () => {
         </Element>{" "}
         <Element name="education">
           <Education />
+        </Element>{" "}
+        <Element name="gallery">
+          <Gallery />
         </Element>{" "}
       </main>{" "}
     </div>

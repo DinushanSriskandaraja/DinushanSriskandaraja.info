@@ -3,6 +3,15 @@ import { Link } from "react-scroll";
 import { useAnimate, stagger } from "framer-motion";
 import styles from "./Navbar.module.css"; // Import CSS module
 
+const menuItems = [
+  { id: 1, label: "Home", sectionId: "home" },
+  { id: 2, label: "About", sectionId: "about" },
+  { id: 3, label: "Projects", sectionId: "projects" },
+  { id: 4, label: "Experiences", sectionId: "experiences" },
+  { id: 5, label: "Education", sectionId: "education" },
+  { id: 5, label: "Gallery", sectionId: "gallery" },
+];
+
 function useMenuAnimation(isOpen) {
   const [scope, animate] = useAnimate();
 
@@ -56,66 +65,21 @@ const Navbar = () => {
     <div ref={scope}>
       <nav className={`${styles.navbar} ${isOpen ? styles.open : ""}`}>
         <ul className={styles.navList}>
-          <li className={styles.navItem}>
-            <Link
-              to="home"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className={styles.navLink}
-              onClick={() => setIsOpen(false)}
-            >
-              Home{" "}
-            </Link>{" "}
-          </li>{" "}
-          <li className={styles.navItem}>
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className={styles.navLink}
-              onClick={() => setIsOpen(false)}
-            >
-              About{" "}
-            </Link>{" "}
-          </li>{" "}
-          <li className={styles.navItem}>
-            <Link
-              to="projects"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className={styles.navLink}
-              onClick={() => setIsOpen(false)}
-            >
-              Projects{" "}
-            </Link>{" "}
-          </li>{" "}
-          <li className={styles.navItem}>
-            <Link
-              to="experiences"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className={styles.navLink}
-              onClick={() => setIsOpen(false)}
-            >
-              Experiences{" "}
-            </Link>{" "}
-          </li>{" "}
-          <li className={styles.navItem}>
-            <Link
-              to="education"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className={styles.navLink}
-              onClick={() => setIsOpen(false)}
-            >
-              Education{" "}
-            </Link>{" "}
-          </li>{" "}
+          {" "}
+          {menuItems.map((item) => (
+            <li key={item.id} className={styles.navItem}>
+              <Link
+                to={item.sectionId}
+                spy={true}
+                smooth={true}
+                duration={500}
+                className={styles.navLink}
+                onClick={() => setIsOpen(false)}
+              >
+                {item.label}{" "}
+              </Link>{" "}
+            </li>
+          ))}{" "}
         </ul>{" "}
       </nav>{" "}
       <button

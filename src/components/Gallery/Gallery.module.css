@@ -1,0 +1,49 @@
+/* Gallery.module.css */
+
+.galleryContainer {
+  position: relative;
+  display: grid;
+  min-height: 100vh;
+  /* width: 95vw; */
+  place-content: center;
+  overflow: hidden;
+  background-color: var(--primary-text-color);
+  /* Background color equivalent to neutral-950 */
+}
+
+.galleryTitle {
+  position: relative;
+  z-index: 0;
+  font-size: 12rem;
+  /* Adjust the size as needed */
+  font-weight: 900;
+  color: var(--primary-brand);
+  /* Text color equivalent to neutral-800 */
+  text-align: center;
+  margin: 0;
+}
+
+.highlight {
+  color: #bf925a;
+  /* Highlight color equivalent to indigo-500 */
+}
+
+.imageContainer {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  /* height: 80vh; */
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageCard {
+  position: absolute;
+  background-color: #f0f0f0;
+  /* Background color equivalent to neutral-200 */
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,8 @@
+.drag-elements {
+  position: absolute;
+  background-color: #e5e5e5;
+  /* Replace with your color */
+  padding: 0.25rem;
+  padding-bottom: 1rem;
+  cursor: grab;
+}
