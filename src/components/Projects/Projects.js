@@ -1,15 +1,17 @@
 import React from "react";
 import ProjectsCard from "../ProjectCard/ProjectCard";
 import styles from "./Projects.module.css"; // Import your CSS module
+import sms from "../../assets/Projects/SMS.jpg";
 
 const projectsData = [
   {
     title: "Project 1",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae...",
-    imageUrl: "https://example.com/project1.jpg",
+    imageUrl: sms,
     githubUrl: "https://github.com/user/project1",
     demoUrl: "https://demo.project1.com",
+    techStack: ["React", "Node.js", "Express", "MongoDB"],
   },
   {
     title: "Project 2",
@@ -34,6 +36,7 @@ const Projects = () => (
           imageUrl={project.imageUrl}
           githubUrl={project.githubUrl}
           demoUrl={project.demoUrl}
+          techStack={project.techStack}
         />
       ))}{" "}
     </div>{" "}

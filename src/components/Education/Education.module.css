@@ -11,7 +11,7 @@
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 4rem;
   color: var(--primary-brand);
   margin-bottom: 40px;
   text-align: center;
@@ -49,7 +49,7 @@
 }
 
 .timelineItem.right {
-  left: 50%;
+  left: 55%;
   transform: translateX(-50%);
   text-align: left;
 }

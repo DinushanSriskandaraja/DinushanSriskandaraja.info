@@ -11,21 +11,32 @@ const EduExCard = ({ title, subtitle, duration, description }) => {
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
     >
-      <Card>
-        <CardContent>
-          <Typography variant="h5" component="div">
+      <Card className={styles.card}>
+        <CardContent className={styles.cardContent}>
+          <Typography variant="h4" component="div" className={styles.title}>
             {" "}
             {title}{" "}
           </Typography>{" "}
-          <Typography variant="subtitle1" color="text.secondary">
+          <Typography
+            variant="h6"
+            color="text.secondary"
+            className={styles.subtitle}
+          >
             {" "}
             {subtitle}{" "}
           </Typography>{" "}
-          <Typography variant="subtitle2" color="text.secondary">
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            className={styles.duration}
+          >
             {" "}
             {duration}{" "}
           </Typography>{" "}
-          <Typography variant="body2"> {description} </Typography>{" "}
+          <Typography variant="body1" className={styles.description}>
+            {" "}
+            {description}{" "}
+          </Typography>{" "}
         </CardContent>{" "}
       </Card>{" "}
     </motion.div>

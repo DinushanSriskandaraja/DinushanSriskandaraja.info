@@ -1,4 +1,80 @@
 .EduExCard {
+  width: 100%;
+  max-width: 400px;
   margin: 20px;
+  /* Added transition for smooth scaling effect */
+  transition: transform 0.3s ease;
+}
+
+.card {
+  border-radius: 15px;
+  background-color: var(--primary-background-color);
+  box-shadow: none;
+  border: 2px solid var(--primary-brand);
+}
+
+.cardContent {
   padding: 20px;
+  /* Ensure padding is consistent */
+}
+
+.title {
+  font-size: 1.75rem;
+  /* Larger text for title */
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  /* Larger text for subtitle */
+  margin-bottom: 5px;
+}
+
+.duration {
+  font-size: 1rem;
+  /* Font size for duration */
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1rem;
+  /* Font size for description */
+  line-height: 1.5;
+  /* Improve readability */
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+  .EduExCard {
+    max-width: 90%;
+    margin: 10px;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  .duration,
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .EduExCard {
+    max-width: 100%;
+    margin: 5px;
+  }
+  .title {
+    font-size: 1.25rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .duration,
+  .description {
+    font-size: 0.85rem;
+  }
 }

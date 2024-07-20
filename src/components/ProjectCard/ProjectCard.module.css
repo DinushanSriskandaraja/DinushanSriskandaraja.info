@@ -1,36 +1,28 @@
 .ProjectsCard {
   width: 350px;
-  height: 500px;
+  height: 350px;
   perspective: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
   background-color: var(--primary-background-color);
-  /* border: 2px solid var(--primary-brand); */
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
   position: relative;
+  transition: transform 0.3s ease;
 }
 
 .projectInner {
-  width: 80%;
-  height: 80%;
-  position: absolute;
-  /* top: 10%; */
-  /* Adjust top to 50% to center vertically */
-  /* left: 10%; */
-  /* Adjust left to 50% to center horizontally */
-  transform: translate(-50%, -50%);
-  /* Centering trick */
+  width: 100%;
+  height: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--primary-text-color);
-  border: 2px solid var(--primary-brand);
-  border-radius: 10px;
   overflow: hidden;
+  border-radius: 15px;
   transition: transform 0.3s ease;
   transform-style: preserve-3d;
 }
@@ -42,18 +34,42 @@
 
 .projectImage {
   width: 100%;
-  height: 180px;
+  height: 100%;
   object-fit: cover;
-  border-bottom: 2px solid var(--primary-brand);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: filter 0.3s ease;
+}
+
+.ProjectsCard:hover .projectImage {
+  filter: blur(5px);
 }
 
 .projectInfo {
   padding: 15px;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--primary-background-color);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.ProjectsCard:hover .projectInfo {
+  opacity: 1;
 }
 
 .projectTitle {
-  color: var(--primary-brand);
   font-size: 1.5rem;
   margin: 10px 0;
 }
@@ -61,12 +77,25 @@
 .projectDescription {
   color: var(--primary-background-color);
   font-size: 1rem;
-  margin: 10px 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  padding-right: 20px;
+  /* margin: 10px; */
+  text-align: left;
+}
+
+.techStack {
+  margin: 10px 0 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+
+.techStackItem {
+  border: 2px solid var(--primary-brand);
+  color: var(--primary-brand);
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 0.85rem;
 }
 
 .projectLinks {
@@ -94,24 +123,23 @@
 @media (max-width: 768px) {
   .ProjectsCard {
     width: 90%;
-    /* Increased width to use more space */
     height: auto;
-    /* Adjust height to fit content */
     padding: 10px;
   }
   .projectInner {
     height: auto;
-    /* Adjust height to fit content */
   }
   .projectImage {
     height: 150px;
-    /* Adjust image height for better fit */
   }
   .projectTitle {
     font-size: 1.25rem;
   }
   .projectDescription {
     font-size: 0.9rem;
+  }
+  .techStackItem {
+    font-size: 0.8rem;
   }
   .projectLinks {
     flex-direction: column;
@@ -126,21 +154,20 @@
 @media (max-width: 480px) {
   .ProjectsCard {
     width: 100%;
-    /* Full width for small screens */
     height: 400px;
-    /* Adjust height to fit content */
     padding: 5px;
-    /* Reduced padding */
   }
   .projectImage {
     height: 120px;
-    /* Further reduced height */
   }
   .projectTitle {
     font-size: 1rem;
   }
   .projectDescription {
     font-size: 0.8rem;
+  }
+  .techStackItem {
+    font-size: 0.75rem;
   }
   .projectLinks {
     flex-direction: column;

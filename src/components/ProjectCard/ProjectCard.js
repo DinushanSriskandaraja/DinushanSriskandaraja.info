@@ -11,7 +11,14 @@ import styles from "./ProjectCard.module.css";
 const ROTATION_RANGE = 32.5;
 const HALF_ROTATION_RANGE = 32.5 / 2;
 
-const ProjectsCard = ({ title, description, imageUrl, githubUrl, demoUrl }) => {
+const ProjectsCard = ({
+  title,
+  description,
+  imageUrl,
+  githubUrl,
+  demoUrl,
+  techStack,
+}) => {
   const ref = useRef(null);
 
   const x = useMotionValue(0);
@@ -63,6 +70,17 @@ const ProjectsCard = ({ title, description, imageUrl, githubUrl, demoUrl }) => {
         <div className={styles.projectInfo}>
           <h3 className={styles.projectTitle}> {title} </h3>{" "}
           <p className={styles.projectDescription}> {description} </p>{" "}
+          {techStack && techStack.length > 0 && (
+            <div className={styles.techStack}>
+              {" "}
+              {techStack.map((tech, index) => (
+                <span key={index} className={styles.techStackItem}>
+                  {" "}
+                  {tech}{" "}
+                </span>
+              ))}{" "}
+            </div>
+          )}{" "}
           <div className={styles.projectLinks}>
             {" "}
             {githubUrl && (
@@ -98,11 +116,13 @@ ProjectsCard.propTypes = {
   imageUrl: PropTypes.string.isRequired,
   githubUrl: PropTypes.string,
   demoUrl: PropTypes.string,
+  techStack: PropTypes.arrayOf(PropTypes.string), // Added PropTypes for techStack
 };
 
 ProjectsCard.defaultProps = {
   githubUrl: "",
   demoUrl: "",
+  techStack: [], // Default value for techStack
 };
 
 export default ProjectsCard;
