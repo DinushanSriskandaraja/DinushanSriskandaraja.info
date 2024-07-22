@@ -1,5 +1,6 @@
 .About {
-  /* width: 100%; */
+  overflow-x: hidden;
+  width: 100vw;
   height: 100vh;
   padding: 30px;
   margin: 0;
@@ -16,7 +17,7 @@
 }
 
 .content {
-  width: 100%;
+  max-width: 100%;
   max-width: 1000px;
   left: 10%;
   /* Constrain maximum width */
