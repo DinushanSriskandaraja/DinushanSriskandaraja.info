@@ -1,7 +1,7 @@
 .About {
   overflow-x: hidden;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   padding: 30px;
   margin: 0;
   /* Remove margin for full height */
@@ -19,7 +19,7 @@
 .content {
   max-width: 100%;
   max-width: 1000px;
-  left: 10%;
+  left: 5%;
   /* Constrain maximum width */
   display: flex;
   flex-direction: row;
@@ -37,11 +37,11 @@
   color: var(--primary-brand);
   text-transform: uppercase;
   position: absolute;
-  top: 30%;
+  top: 25%;
   /* Center vertically in the container */
   left: -20%;
   /* Position to the left of the content area */
-  transform: translateY(-50%) rotate(-90deg);
+  /* transform: translateY(-50%) rotate(-90deg); */
   /* Center vertically and rotate */
   transform-origin: center;
   /* Rotate around the center */
@@ -53,7 +53,8 @@
 .description {
   width: calc(100% - 150px);
   /* Adjust width to account for the space needed for the title */
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
   /* Increase default font size */
   line-height: 1.8;
   /* Adjust line-height for better readability */

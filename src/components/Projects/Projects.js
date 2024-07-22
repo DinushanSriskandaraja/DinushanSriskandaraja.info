@@ -14,12 +14,33 @@ const projectsData = [
     techStack: ["React", "Node.js", "Express", "MongoDB"],
   },
   {
-    title: "Project 2",
+    title: "Project 1",
     description:
-      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames...",
-    imageUrl: "https://example.com/project2.jpg",
-    githubUrl: "https://github.com/user/project2",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae...",
+    imageUrl: sms,
+    githubUrl: "https://github.com/user/project1",
+    demoUrl: "https://demo.project1.com",
+    techStack: ["React", "Node.js", "Express", "MongoDB"],
   },
+  {
+    title: "Project 1",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae...",
+    imageUrl: sms,
+    githubUrl: "https://github.com/user/project1",
+    demoUrl: "https://demo.project1.com",
+    techStack: ["React", "Node.js", "Express", "MongoDB"],
+  },
+  {
+    title: "Project 1",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae...",
+    imageUrl: sms,
+    githubUrl: "https://github.com/user/project1",
+    demoUrl: "https://demo.project1.com",
+    techStack: ["React", "Node.js", "Express", "MongoDB"],
+  },
+
   // Add more projects as needed
 ];
 

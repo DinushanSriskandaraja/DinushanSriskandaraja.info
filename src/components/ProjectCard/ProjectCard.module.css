@@ -1,6 +1,6 @@
 .ProjectsCard {
-  width: 350px;
-  height: 350px;
+  width: 270px;
+  height: 270px;
   perspective: 1000px;
   display: flex;
   justify-content: center;
@@ -47,7 +47,7 @@
 }
 
 .projectInfo {
-  padding: 15px;
+  padding: 8px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -60,8 +60,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 270px;
+  height: 270px;
   border-radius: 10px;
 }
 
@@ -71,23 +71,24 @@
 
 .projectTitle {
   font-size: 1.5rem;
-  margin: 10px 0;
+  text-align: center;
+  margin: 0;
 }
 
 .projectDescription {
   color: var(--primary-background-color);
-  font-size: 1rem;
-  padding-right: 20px;
+  font-size: 0.8rem;
+  /* padding-right: 20px; */
   /* margin: 10px; */
   text-align: left;
 }
 
 .techStack {
-  margin: 10px 0 20px 0;
+  margin: 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  justify-content: center;
+  justify-content: left;
 }
 
 .techStackItem {
@@ -95,16 +96,19 @@
   color: var(--primary-brand);
   padding: 2px 8px;
   border-radius: 20px;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
 }
 
 .projectLinks {
+  width: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .projectLink {
+  font-size: 0.8rem;
   color: var(--primary-brand);
   text-decoration: none;
   border: 1px solid var(--primary-brand);

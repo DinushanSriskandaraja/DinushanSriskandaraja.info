@@ -1,4 +1,6 @@
 .Projects {
+  min-height: 100vh;
+  max-width: 100vw;
   padding: 40px 20px;
   text-align: center;
   background-color: var(--primary-background-color);
@@ -6,17 +8,19 @@
 
 .projectsTitle {
   font-size: 4rem;
-  /* Increased font size */
   color: var(--primary-brand);
   margin-bottom: 40px;
 }
 
 .projectCards {
+  /* max-width: 100%; */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  justify-items: center;
-  /* Center align grid items horizontally */
+  justify-content: center;
+  flex-wrap: wrap;
+  place-items: center;
+  align-items: start;
 }
 
 /* Responsive adjustments */
@@ -24,32 +28,24 @@
 @media (max-width: 768px) {
   .Projects {
     padding: 30px 15px;
-    /* Adjust padding for smaller screens */
   }
   .projectsTitle {
     font-size: 2.5rem;
-    /* Slightly larger title for better fit */
   }
   .projectCards {
     grid-template-columns: 1fr;
     gap: 15px;
-    /* Adjust gap for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .Projects {
-    /* min-height: 500px; */
     padding: 20px 10px;
-    /* Further reduced padding for very small screens */
   }
   .projectsTitle {
     font-size: 2rem;
-    /* Increased title size */
   }
   .projectCards {
-    /* height: 100%; */
     gap: 10px;
-    /* Adjust gap for very small screens */
   }
 }

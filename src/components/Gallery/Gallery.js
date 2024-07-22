@@ -19,7 +19,7 @@ const images = imageFiles.map((file, index) => ({
   src: file, // Use file.default to get the image path
   alt: `Example image ${index + 1}`,
   // rotate: `${getRandomRotation()}deg`, // Example rotation
-  rotate: `${getRandomValue(0, 180)}deg`,
+  rotate: `${getRandomValue(-20, 20)}deg`,
   top: `${getRandomValue(0, 80)}%`, // Random top position between 0% and 80%
   left: `${getRandomValue(0, 80)}%`, // Random left position between 0% and 80%
   width: "150px", // Adjust as needed
