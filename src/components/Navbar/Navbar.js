@@ -52,7 +52,7 @@ function useMenuAnimation(isOpen) {
       ],
       ...menuAnimations,
     ]);
-  }, [isOpen]);
+  }, [isOpen, animate]);
 
   return scope;
 }
