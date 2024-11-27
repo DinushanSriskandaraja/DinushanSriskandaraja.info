@@ -10,6 +10,7 @@ const menuItems = [
   { id: 4, label: "Experiences", sectionId: "experiences" },
   { id: 5, label: "Education", sectionId: "education" },
   { id: 6, label: "Gallery", sectionId: "gallery" },
+  { id: 6, label: "Blog", sectionId: "blog" },
 ];
 
 function useMenuAnimation(isOpen) {
@@ -74,8 +75,7 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
                 className={styles.navLink}
-                onClick={() => setIsOpen(false)}
-              >
+                onClick={() => setIsOpen(false)}>
                 {item.label}{" "}
               </Link>{" "}
             </li>
@@ -84,8 +84,7 @@ const Navbar = () => {
       </nav>{" "}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={styles.toggleButton}
-      >
+        className={styles.toggleButton}>
         <svg width="23" height="23" viewBox="0 0 23 23">
           <path
             className="top"

@@ -5,6 +5,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Experiences from "./components/Experience/Experience";
 import Education from "./components/Education/Education";
+import Blog from "./components/Blog/Blog";
 import { Element } from "react-scroll";
 import "./styles/App.css";
 import Gallery from "./components/Gallery/Gallery";
@@ -31,6 +32,9 @@ const App = () => {
         </Element>{" "}
         <Element name="gallery">
           <Gallery />
+        </Element>{" "}
+        <Element name="blog">
+          <Blog />
         </Element>{" "}
       </main>{" "}
     </div>

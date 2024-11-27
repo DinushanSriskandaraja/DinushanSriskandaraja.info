@@ -1,0 +1,90 @@
+.Blog {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  /* Full viewport height */
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  /* Center vertically */
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+  justify-content: center;
+  /* Optional: to ensure items inside container are centered */
+}
+
+.cardsSection {
+  width: 25%;
+  /* Set the left section width for the blog cards */
+  height: 80vh;
+  /* Limit height for scrolling */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+}
+
+.activeCard {
+  border: 2px solid var(--primary-brand);
+  /* Outer line or border for active card */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  /* Optional shadow effect */
+}
+
+.readerSection {
+  width: 70%;
+  /* Right section dedicated to the markdown reader */
+  max-height: 80vh;
+  /* Limit height for scrolling */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+  padding: 20px;
+  background: var(--primary-background-color);
+  border: 1px solid var(--primary-brand);
+  border-radius: 8px;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* Single column of cards */
+  gap: 20px;
+  width: 100%;
+}
+
+.card {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cardImage {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.cardOverlay {
+  padding: 10px;
+  text-align: center;
+}
+
+.cardOverlay h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.arrow {
+  font-size: 20px;
+  cursor: pointer;
+}

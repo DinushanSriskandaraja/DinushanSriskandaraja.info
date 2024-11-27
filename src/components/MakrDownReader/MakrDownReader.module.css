@@ -1,0 +1,41 @@
+.MakrDownReader {
+  max-height: 100vh;
+  /* Ensures the container takes up the full viewport height */
+  overflow-y: auto;
+  /* Allow vertical scrolling */
+  overflow-x: hidden;
+  /* Disable horizontal scrolling */
+  padding: 20px;
+  /* Optional: Padding for spacing */
+  word-wrap: break-word;
+  /* Break long words to prevent horizontal overflow */
+  word-break: break-word;
+  /* Break long words in code blocks and text */
+}
+
+/* For code blocks specifically */
+
+.react-markdown {
+  overflow-wrap: break-word;
+  /* Ensures words in markdown break */
+}
+
+.customLink {
+  color: #007bff;
+  /* Custom link color */
+  text-decoration: underline;
+}
+
+.customLink:hover {
+  text-decoration: none;
+  /* Optional: Remove underline on hover */
+}
+
+/* For SyntaxHighlighter component (code blocks) */
+
+.code-block {
+  word-wrap: break-word;
+  /* Prevent code lines from overflowing */
+  white-space: pre-wrap;
+  /* Wrap code without scrolling */
+}
