@@ -5,16 +5,49 @@ import styles from "./Blog.module.css";
 
 const blogPosts = [
   {
-    title: "Discover",
+    title: "Professional Skills",
     img: "path/to/discover.jpg",
-    fileName: "MentalHealth.md",
+    fileName: "Lesson1.md",
   },
-  { title: "Learn", img: "path/to/learn.jpg", fileName: "1.md" },
-  { title: "Grow", img: "path/to/grow.jpg", fileName: "grow.md" },
   {
-    title: "Discover Again",
-    img: "path/to/discover.jpg",
-    fileName: "discover-again.md",
+    title: "Cv and Cover letter Writing",
+    img: "path/to/learn.jpg",
+    fileName: "Lesson2.md",
+  },
+  {
+    title: "Portfolio",
+    img: "path/to/learn.jpg",
+    fileName: "Lesson3.md",
+  },
+  {
+    title: "Interview Skills",
+    img: "path/to/learn.jpg",
+    fileName: "Lesson4.md",
+  },
+  {
+    title: "Online/Email Etiquette",
+    img: "path/to/learn.jpg",
+    fileName: "Lesson5.md",
+  },
+  {
+    title: "Telephone Etiquette",
+    img: "path/to/learn.jpg",
+    fileName: "Lesson6.md",
+  },
+  {
+    title: "Negotation Skills",
+    img: "path/to/learn.jpg",
+    fileName: "Lesson7.md",
+  },
+  {
+    title: "Meeting Skills",
+    img: "path/to/learn.jpg",
+    fileName: "Lesson8.md",
+  },
+  {
+    title: "Emotional Intelligence",
+    img: "path/to/learn.jpg",
+    fileName: "Lesson9.md",
   },
 ];
 
@@ -64,7 +97,7 @@ const Blog = () => {
                     whileHover={{ x: 5 }}
                     transition={{ type: "tween", duration: 0.3 }}>
                     {" "}
-                    →
+                    →{" "}
                   </motion.span>{" "}
                 </div>{" "}
               </motion.div>

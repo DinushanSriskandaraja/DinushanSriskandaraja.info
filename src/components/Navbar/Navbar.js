@@ -76,6 +76,7 @@ const Navbar = () => {
                 duration={500}
                 className={styles.navLink}
                 onClick={() => setIsOpen(false)}>
+                {" "}
                 {item.label}{" "}
               </Link>{" "}
             </li>
