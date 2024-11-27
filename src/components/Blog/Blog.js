@@ -2,51 +2,60 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import MakrDownReader from "../MakrDownReader/MakrDownReader";
 import styles from "./Blog.module.css";
+import l1 from "../../assets/banner/l1.jpg";
+import l2 from "../../assets/banner/l2.jpg";
+import l3 from "../../assets/banner/l3.jpg";
+import l4 from "../../assets/banner/l4.jpg";
+import l5 from "../../assets/banner/l5.jpg";
+import l6 from "../../assets/banner/l6.jpg";
+import l7 from "../../assets/banner/l7.jpg";
+import l8 from "../../assets/banner/l8.jpg";
+import l9 from "../../assets/banner/l9.jpg";
 
 const blogPosts = [
   {
     title: "Professional Skills",
-    img: "path/to/discover.jpg",
+    img: l1,
     fileName: "Lesson1.md",
   },
   {
     title: "Cv and Cover letter Writing",
-    img: "path/to/learn.jpg",
+    img: l2,
     fileName: "Lesson2.md",
   },
   {
     title: "Portfolio",
-    img: "path/to/learn.jpg",
+    img: l3,
     fileName: "Lesson3.md",
   },
   {
     title: "Interview Skills",
-    img: "path/to/learn.jpg",
+    img: l4,
     fileName: "Lesson4.md",
   },
   {
     title: "Online/Email Etiquette",
-    img: "path/to/learn.jpg",
+    img: l5,
     fileName: "Lesson5.md",
   },
   {
     title: "Telephone Etiquette",
-    img: "path/to/learn.jpg",
+    img: l6,
     fileName: "Lesson6.md",
   },
   {
     title: "Negotation Skills",
-    img: "path/to/learn.jpg",
+    img: l7,
     fileName: "Lesson7.md",
   },
   {
     title: "Meeting Skills",
-    img: "path/to/learn.jpg",
+    img: l8,
     fileName: "Lesson8.md",
   },
   {
     title: "Emotional Intelligence",
-    img: "path/to/learn.jpg",
+    img: l9,
     fileName: "Lesson9.md",
   },
 ];
