@@ -43,7 +43,7 @@
 .navLink {
   text-decoration: none;
   color: var(--primary-text-color);
-  font-size: 4rem;
+  font-size: 3.75rem;
   font-weight: bold;
   transition: color 0.3s;
   text-align: center;
