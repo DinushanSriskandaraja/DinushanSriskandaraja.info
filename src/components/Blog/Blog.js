@@ -8,9 +8,9 @@ import l3 from "../../assets/banner/l3.jpg";
 import l4 from "../../assets/banner/l4.jpg";
 import l5 from "../../assets/banner/l5.jpg";
 import l6 from "../../assets/banner/l6.jpg";
-import l7 from "../../assets/banner/l7.jpg";
+import l7 from "../../assets/banner/l7.png";
 import l8 from "../../assets/banner/l8.jpg";
-import l9 from "../../assets/banner/l9.jpg";
+import l9 from "../../assets/banner/l9.png";
 
 const blogPosts = [
   {
