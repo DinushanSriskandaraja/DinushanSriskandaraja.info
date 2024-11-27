@@ -7,6 +7,7 @@
   padding-bottom: 1rem;
   /* pb-4 */
   transition: transform 0.2s;
+  min-height: 300px;
 }
 
 .image-card:hover {

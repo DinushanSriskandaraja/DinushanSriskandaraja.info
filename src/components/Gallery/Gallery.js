@@ -22,8 +22,8 @@ const images = imageFiles.map((file, index) => ({
   rotate: `${getRandomValue(-20, 20)}deg`,
   top: `${getRandomValue(0, 80)}%`, // Random top position between 0% and 80%
   left: `${getRandomValue(0, 80)}%`, // Random left position between 0% and 80%
-  width: "150px", // Adjust as needed
-  height: "auto",
+  width: "auto", // Adjust as needed
+  height: "200px",
 }));
 
 const Gallery = () => {
@@ -35,8 +35,7 @@ const Gallery = () => {
         className={styles.galleryTitle}
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-      >
+        transition={{ duration: 1, ease: "easeOut" }}>
         GALLERY <span className={styles.highlight}> . </span>{" "}
       </motion.h2>{" "}
       <div className={styles.imageContainer} ref={containerRef}>
