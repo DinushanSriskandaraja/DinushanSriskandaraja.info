@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import MakrDownReader from "../MakrDownReader/MakrDownReader";
 import styles from "./Blog.module.css";
@@ -54,7 +54,10 @@ const blogPosts = [
 const Blog = () => {
   const [selectedContent, setSelectedContent] = useState(null);
   const [activeCardIndex, setActiveCardIndex] = useState(null); // Track the active card
-
+  useEffect(() => {
+    // Load the first blog post as default
+    loadMarkdown(blogPosts[0].fileName, 0);
+  }, []);
   const loadMarkdown = (fileName, index) => {
     import(`../../assets/.md/${fileName}`)
       .then((module) => fetch(module.default).then((res) => res.text()))
